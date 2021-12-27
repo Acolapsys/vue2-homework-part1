@@ -4,18 +4,18 @@ import {
   propsModule,
   styleModule,
   eventListenersModule,
-  h,
+  h
 } from "snabbdom";
+import persons from './persons'
 
 const patch = init([
   classModule,
   propsModule,
   styleModule,
-  eventListenersModule,
+  eventListenersModule
 ]);
 
 const app = document.getElementById("app");
-
-const vnode = h("h1", null, "Hello");
+const vnode = h("div.wrapper", h("div.container", persons));
 
 patch(app, vnode);
