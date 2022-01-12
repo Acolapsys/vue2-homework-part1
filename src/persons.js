@@ -1,21 +1,25 @@
 import { h } from "snabbdom";
+import pic1 from "@/assets/1.png";
+import pic2 from "@/assets/2.png";
+import pic3 from "@/assets/3.png";
+import pic4 from "@/assets/4.png";
 const personsData = [
   {
-    icon: "./src/assets/1.png",
+    icon: pic1,
     title: "1st person",
     text: "Some very long and abstract description for cute avatar. And some lines more."
   },
   {
-    icon: "./src/assets/2.png",
+    icon: pic2,
     title: "2nd person",
     text: "Some description2"
   },
   {
-    icon: "./src/assets/3.png",
+    icon: pic3,
     title: "3rd person",
     text: "Some description3"
   },
-  { icon: "./src/assets/4.png", title: "4th person", text: "Some description4" }
+  { icon: pic4, title: "4th person", text: "Some description4" }
 ];
 
 const personBlock = (data) =>
